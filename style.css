@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,400;1,500 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorOne: #72005F;
+    --colorTwo: #BAA193;
+}
+
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.info p {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--colorTwo);
+}
+
+.info h1 {
+    font-size: 8em;
+    color: var(--colorOne);
+    margin-bottom: 2rem;
+}
+
+.info button {
+    padding: 2rem 8rem 2rem 8rem;
+    border-radius:2rem;
+    border: none;
+    background-color: var(--colorOne);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+img {
+    position:relative;
+    display: block;
+    width: 30rem;
+    margin-left: 20rem;
+}
+
+@media screen and (max-width:870px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info button {
+        padding: 1rem 4rem;
+        font-weight: normal;
+    }
+
+    img {
+        margin: 2rem 0;
+        width: 20rem;
+        top: -15px;
+    }
+}
